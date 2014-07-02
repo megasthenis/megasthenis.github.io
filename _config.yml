@@ -1,0 +1,12 @@
+# Site settings
+title: Megas
+email: 
+description: "Personal website for Megasthenis Asteris"
+baseurl: ""
+url: "http://megasthenis.github.io"
+twitter_username: 
+github_username:  megasthenis
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,11 @@
+<ul class="nav nav-stacked" id="sidebar">
+    {% if page.url == node.url %}
+    <li class="active">
+        <a href="" class="active">Home</a>
+    <li>
+    {% else %}
+    <li>
+        <a href="">Home</a>
+    </li>
+    {% endif %}
+</ul>

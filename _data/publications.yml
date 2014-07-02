@@ -1,0 +1,176 @@
+- id: nnspca:2014
+  type: conference
+  authors: [asteris, papailiopoulos, dimakis]
+  venue: International Conference on Machine Learning (ICML), Beijing, China
+  bibtype: inproceedings
+  bib:
+    author: 
+    title: "Nonnegative Sparse PCA with provable guarantees"
+    year: 2014
+  links:
+    - name: .pdf
+      url: repository/nnspca-full.pdf
+    - name: slides.pdf
+      url: repository/nnspca-icml-2014-slides.pdf
+      
+
+- id: xorbas:2013
+  type: conference
+  authors: [sathiamoorthy, asteris, papailiopoulos, dimakis, vadali, chen, dhruba]
+  venue: Proceedings of the VLDB Endowment 2013, Riva del Garda, Trento, Italy
+  bibtype: inproceedings
+  bib:
+    author: Sathiamoorthy, Maheswaran and Asteris, Megasthenis and Papailiopoulos, Dimitris and Dimakis, Alexandros G. and Vadali, Ramkumar and Chen, Scott and Borthakur, Dhruba
+    title: "XORing elephants: novel erasure codes for big data"
+    journal: Proc. VLDB Endow.
+    volume: 6
+    number: 5
+    pages: 325--336
+    numpages: 12
+    publisher: VLDB Endowment
+    year: 2013
+    month: March
+    issn: 2150-8097
+    acmid: 2488339
+    url: http://dl.acm.org/citation.cfm?id=2535573.2488339
+  links:
+    - name: .pdf
+      url: repository/PVLDB2013-XORingElephants.pdf
+    - name: arXiv
+      url: "http://arxiv.org/abs/1301.3791"
+    - name: .html
+      url: pvldb2013.html
+
+
+- id: "asteris:repfount:2012"
+  type: conference
+  authors: [asteris, dimakis]
+  venue: IEEE ISIT 2012 - International Symposium on Information Theory, Cambridge, MA
+  bibtype: inproceedings
+  bib:
+    author: Asteris, M. and Dimakis, A.G.
+    title: Repairable Fountain codes
+    booktitle: Information Theory Proceedings (ISIT), 2012 IEEE International Symposium on
+    pages: 1752--1756
+    year: 2012
+    month: July
+    issn: 2157-8095
+    doi: 10.1109/ISIT.2012.6283579
+  links:
+    - name: .pdf
+      url: repository/ISIT2012-RepairableFountainCodes.pdf
+    - name: slides
+      url: repository/ISIT2012-RepairableFountainCodes-Presentation.pdf
+    - name: .html
+      url: repairable-fountain-isit2012.html
+
+
+
+- id: "asteris:sparsepca:2011"
+  type: conference
+  authors: [asteris, papailiopoulos, karystinos]
+  venue: IEEE ISIT 2011 - International Symposium on Information Theory, Saint Petersburg, Russia
+  bibtype: inproceedings
+  bib:
+    author: Asteris, M. and Papailiopoulos, D.S. and Karystinos, G.N.
+    title: Sparse principal component of a rank-deficient matrix
+    booktitle: Information Theory Proceedings (ISIT), 2011 IEEE International Symposium on
+    pages: 673--677
+    year: 2011
+    month: March
+    issn: 2157-8095
+    doi: 10.1109/ISIT.2011.6034216
+  links:
+    - name: .pdf
+      url: repository/sparsePC-isit2011.pdf
+    - name: matlab
+      url: repository/sparsePC-matlab.zip
+    - name: .html
+      url: sparsePC-isit2011.html
+
+
+- id: "asteris:repfount:2012"
+  type: journal
+  authors: [asteris, dimakis]
+  venue: IEEE Journal on Selected Areas in Communications (JSAC)
+  bibtype: inproceedings
+  bib:
+    author: Asteris, M. and Dimakis, A. G.
+    title: Repairable Fountain Codes
+    booktitle: 
+    pages: 
+    year: 2013
+    month: 
+    issn: 
+    doi: 
+  links:
+    - name: .pdf
+      url: repository/JSAC2013-RepairableFountainCodes.pdf
+
+
+
+- id: "asteris:spca:2013"
+  type: journal
+  authors: [asteris, papailiopoulos, karystinos]
+  venue: to appear in IEEE Transactions on Information Theory
+  bibtype: inproceedings
+  bib:
+    author: Asteris, M.,  D. S. Papailiopoulos and G. N. Karystinos
+    title: The Sparse Principal Component of a Constant-rank Matrix
+    booktitle: 
+    pages: 
+    year: (accepted in 2013)
+    month: 
+    issn: 
+    doi: 
+  links:
+    - name: preprint.pdf
+      url: repository/sparsePC-TIT-v13.pdf
+    - name: arXiv
+      url: "http://arxiv.org/abs/1312.5891"
+    - name: .html
+      url: sparsePC-isit2011.html
+    - name: matlab.zip
+      url: repository/sparsePC-matlab.zip
+
+
+- id: "digital-garden:2013"
+  type: journal
+  authors: [bletas, vlachaki, kampianakis, kimionis, sklivanitis, tountas, asteris, markopoulos]
+  venue: IEEE Pervasive Computing
+  bibtype: inproceedings
+  bib:
+    author: A. Bletsas, A. Vlachaki, E. Kampianakis, J. Kimionis, G. Sklivanitis, K. Tountas, M. Asteris, P. Markopoulos
+    title: Building the Low-Cost Digital Garden as a Telecom Lab Exercise
+    booktitle: 
+    pages: 
+    year: 2013
+    month: 
+    issn: 
+    doi: 
+  links:
+    - name: .html
+      url: digital-garden-2013.html
+
+- id: "digital-garden:2013"
+  type: other
+  authors: [bletas, vlachaki, kampianakis, kimionis, sklivanitis, tountas, asteris, markopoulos]
+  venue: 2nd International Workshop in Sensing Technologies in Architecture, Forestry and Environment (ECOSENSE), Belgrade, Serbia
+  bibtype: inproceedings
+  bib:
+    author: A. Bletsas, A. Vlachaki, E. Kampianakis, J. Kimionis, G. Sklivanitis, K. Tountas, M. Asteris, P. Markopoulos
+    title: "Towards precision agriculture: Building a soil wetness multi-hop WSN from first principles"
+    booktitle: 
+    pages: 
+    year: 2011
+    month: 
+    issn: 
+    doi: 
+  links:
+    - name: .pdf
+      url: repository/ecosense2011.pdf
+    - name: poster.pdf
+      url: repository/ecosense2011_poster.pdf
+
+
+

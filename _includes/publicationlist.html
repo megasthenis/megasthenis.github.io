@@ -1,0 +1,33 @@
+{% for publication in site.data.publications %}
+{% if publication.type == PUBLICATIONTYPE %}
+<div class="publication-entry">
+    <span class="title">{{ publication.bib.title }}</span>
+    <ul class="authors-list">
+        {% for author in publication.authors %}
+        {% for person in site.data.people %}
+        {% if person[0] == author %}
+        <li>
+            {% if person[1].website == nil %}
+            {{ person[1].name }}
+            {% else %}
+            <a href="{{ person[1].website }}">{{ person[1].name }}</a>
+            {% endif %}
+        </li>
+        {% endif %}
+        {% endfor %}
+        {% endfor %}
+    </ul>
+    <span class="published">
+        {{ publication.venue }}, {{ publication.bib.year }}
+    </span>
+    {% if publication.links.size > 0 %}
+    [&nbsp;
+        {% for link in publication.links %}
+        <a href="{{ link.url }}">{{ link.name }}</a>
+        &nbsp;
+        {% endfor %}
+    ]
+    {% endif %}
+</div>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+<div class="home">
+
+    <!--
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+ -->
+</div>
+
+<!-- Begin Body -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            {% include sidebar.html %}
+        </div>
+        
+
+
+        <div class="col-md-10 main">
+
+            <!-- Top row -->
+            <div class="row">
+              <div class="col-md-3">
+                <img src="images/bio-photo.jpg" height="220" alt="(There should be some kind of picture here...)" title="pic by Natasha!" />
+              </div>
+
+              <div class="col-md-4">
+                  <h3>Megasthenis Asteris</h3>
+                  <br />
+                  ENS 424<br />
+                  UT Austin WNCG<br />
+                  2501 Speedway Stop C0806<br />
+                  Austin, TX 78712-1687<br />
+                  <br />
+                  <abbr title="e-mail">
+                      <a mailto="">&lt;ast...&gt;@usc.edu</a>
+                  </abbr><br />
+                  <abbr title="Google Maps Exact Location"><a href="https://maps.google.com/maps?q=The+University+of+Texas+Department+Of+Electrical+and+Computer+Engineering++++++2501+Speedway,+Austin,+TX&hl=en&sll=30.311838,-97.716866&sspn=0.203322,0.20771&hq=The+University+of+Texas+Department+Of+Electrical+and+Computer+Engineering++++++2501+Speedway,+Austin,+TX&t=m&z=14" target="_blank">Location</a>
+                  </abbr>
+              </div>
+            </div>
+
+            <!-- About row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>About</h1>
+                    I am a graduate student in the ECE Department of the <a href="https://www.utexas.edu/">University of Texas at Austin</a>, under 
+                    <a href="{{ site.data.people.dimakis.website }}">{{ site.data.people.dimakis.name }}</a>
+                    Our group moved to Austin in Spring 2013.
+                    Prior to that, I spent the first two and a half years of graduate school in the Electrical Engineering Department of the <a href="http://www.usc.edu">University of Southern California</a> in Los Angeles.
+                    I received my Diploma in Electronic and Computer Engineering in 2010 from the <a href="http://www.tuc.en"> Technical University of Crete</a>, Chania, Greece, under the supervision of Assistant Prof. 
+                    <a href="{{ site.data.people.karystinos.website }}">{{ site.data.people.karystinos.name }}</a>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h2>Publications</h2>
+
+                <h3>Conferences</h3>
+                {% assign PUBLICATIONTYPE = "conference" %}
+                {% include publicationlist.html %}
+
+                <h3>Journals</h3>
+                {% assign PUBLICATIONTYPE = "journal" %}
+                {% include publicationlist.html %}
+
+                <h3>Other</h3>
+                {% assign PUBLICATIONTYPE = "other" %}
+                {% include publicationlist.html %}
+              </div>
+            </div> <!-- publications end -->
+        </div>
+    </div> <!-- row -->
+</div> <!-- container -->
+
+<!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
