@@ -4,3 +4,13 @@
   margin-left: auto;
   max-width: 979px; /* or 950px */
 }
+
+@media(max-width:991px){ /*991px is the min dim of medium devices. */
+   .affix {
+     position: static;
+    }
+}
+
+#sidebar {
+	margin-top: 20px;
+}

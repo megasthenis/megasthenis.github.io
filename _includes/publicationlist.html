@@ -7,11 +7,13 @@
         {% for person in site.data.people %}
         {% if person[0] == author %}
         <li>
+            <span>
             {% if person[1].website == nil %}
             {{ person[1].name }}
             {% else %}
             <a href="{{ person[1].website }}">{{ person[1].name }}</a>
             {% endif %}
+            </span>
         </li>
         {% endif %}
         {% endfor %}
