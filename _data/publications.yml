@@ -59,7 +59,7 @@
   links:
     - name: .pdf
       url: repository/ISIT2012-RepairableFountainCodes.pdf
-    - name: slides
+    - name: slides.pdf
       url: repository/ISIT2012-RepairableFountainCodes-Presentation.pdf
     - name: #.html
       url: repairable-fountain-isit2012.html
@@ -83,7 +83,7 @@
   links:
     - name: .pdf
       url: repository/sparsePC-isit2011.pdf
-    - name: matlab
+    - name: matlab.zip
       url: repository/sparsePC-matlab.zip
     - name: #.html
       url: sparsePC-isit2011.html
