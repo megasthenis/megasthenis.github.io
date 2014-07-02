@@ -38,7 +38,7 @@
       url: repository/PVLDB2013-XORingElephants.pdf
     - name: arXiv
       url: "http://arxiv.org/abs/1301.3791"
-    - name: .html
+    - name: #.html
       url: pvldb2013.html
 
 
@@ -61,7 +61,7 @@
       url: repository/ISIT2012-RepairableFountainCodes.pdf
     - name: slides
       url: repository/ISIT2012-RepairableFountainCodes-Presentation.pdf
-    - name: .html
+    - name: #.html
       url: repairable-fountain-isit2012.html
 
 
@@ -85,7 +85,7 @@
       url: repository/sparsePC-isit2011.pdf
     - name: matlab
       url: repository/sparsePC-matlab.zip
-    - name: .html
+    - name: #.html
       url: sparsePC-isit2011.html
 
 
@@ -128,7 +128,7 @@
       url: repository/sparsePC-TIT-v13.pdf
     - name: arXiv
       url: "http://arxiv.org/abs/1312.5891"
-    - name: .html
+    - name: #.html
       url: sparsePC-isit2011.html
     - name: matlab.zip
       url: repository/sparsePC-matlab.zip
@@ -149,7 +149,7 @@
     issn: 
     doi: 
   links:
-    - name: .html
+    - name: #.html
       url: digital-garden-2013.html
 
 - id: "digital-garden:2013"

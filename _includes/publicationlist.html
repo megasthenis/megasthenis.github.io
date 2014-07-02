@@ -20,11 +20,22 @@
     <span class="published">
         {{ publication.venue }}, {{ publication.bib.year }}
     </span>
-    {% if publication.links.size > 0 %}
+
+
+    {% assign validlinks = 0 %}
+    {% for link in publication.links %}
+        {% if link.name != nil and link.url != nil %}
+            {% assign validlinks = validlinks | plus: 1 %}
+        {% endif %}
+    {% endfor %}
+
+    {% if validlinks > 0 %}
     [&nbsp;
         {% for link in publication.links %}
+        {% if link.name != nil and link.url != nil %}
         <a href="{{ link.url }}">{{ link.name }}</a>
         &nbsp;
+        {% endif %}
         {% endfor %}
     ]
     {% endif %}
