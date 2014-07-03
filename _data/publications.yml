@@ -136,7 +136,7 @@
 
 - id: "digital-garden:2013"
   type: journal
-  authors: [bletas, vlachaki, kampianakis, kimionis, sklivanitis, tountas, asteris, markopoulos]
+  authors: [bletsas, vlachaki, kampianakis, kimionis, sklivanitis, tountas, asteris, markopoulos]
   venue: IEEE Pervasive Computing
   bibtype: inproceedings
   bib:
@@ -154,7 +154,7 @@
 
 - id: "digital-garden:2013"
   type: other
-  authors: [bletas, vlachaki, kampianakis, kimionis, sklivanitis, tountas, asteris, markopoulos]
+  authors: [bletsas, vlachaki, kampianakis, kimionis, sklivanitis, tountas, asteris, markopoulos]
   venue: 2nd International Workshop in Sensing Technologies in Architecture, Forestry and Environment (ECOSENSE), Belgrade, Serbia
   bibtype: inproceedings
   bib:
