@@ -5,13 +5,13 @@
     <ul class="authors-list">
         {% for author in publication.authors %}
         {% for person in site.data.people %}
-        {% if person[0] == author %}
+        {% if person == author %}
         <li>
             <span>
-            {% if person[1].website == nil %}
-            {{ person[1].name }}
+            {% if person.website == nil %}
+            {{ person.name }}
             {% else %}
-            <a href="{{ person[1].website }}">{{ person[1].name }}</a>
+            <a href="{{ person[1].website }}">{{ person.name }}</a>
             {% endif %}
             </span>
         </li>
