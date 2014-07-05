@@ -32,47 +32,65 @@
 
 
     <body>
-
-    <header class="site-header">
-
-  <div class="wrap">
-  </div>
-
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">Research</a></li>
+            <li><a href="#contact">Stuff</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 </header>
 
-
-    <div class="page-content">
-      <div class="wrap">
-      <!-- Begin Body -->
-<div class="container">
+      <div class="page-content">
+        <div class="wrap">
+        <!-- Begin container -->
+  <div class="container">
     <div class="row">
-        <div class="col-md-2">
-            <div class="well sidebar-nav affix" id="sidebar">
-	<ul class="nav nav-list">
-	  <li><a href="/">Home</a></li>
-	</ul>
-</div>
-        </div>
-        
-
-
-        <div class="col-md-10 main">
+        <div class="col-md-9 main">
 
             <!-- Top row -->
             <div class="row">
               <h2></h2>
-              <div class="col-md-3">
+              <div class="col-xs-6 col-sm-4 col-md-4">
                 <img src="images/bio-photo.jpg" height="220" alt="(There should be some kind of picture here...)" title="pic by Natasha!" />
               </div>
+              <div class="col-xs-6 col-sm-4 col-md-4">
+                  <h3>Megasthenis Asteris
+                    <br />loves Natasha Watts
+                  </h3>
+                  <br />
+                  <div class="row">
+                    <div class="col-xs-1 glyphicon glyphicon-map-marker" style="margin-top:3px;"></div>
+                    <div class="col-xs-10">
+                      UTA 7.511<br />
+                      1616 Guadalupe St<br />
+                      Austin, TX 78701
+                    </div>
+                  </div>
 
-              <div class="col-md-4">
-                  <h3>Megasthenis Asteris</h3>
                   <br />
-                  UTA<br />
-                  1616 Guadalupe St<br />
-                  Austin, TX 78701<br />
-                  <br />
-                  <span>megas</span>@utexas.edu
+                  <div class="row">
+                    <div class="col-xs-1 glyphicon glyphicon-envelope" style="margin-top:3px;"></div>
+                    <div class="col-xs-10">
+                      <span>megas</span>@utexas.edu
+                    </div>
+                  </div>
+              </div>
+              <div class="col-sm-2 col-md-4">
+                
               </div>
             </div>
 
@@ -84,7 +102,7 @@
                     <a href="http://users.ece.utexas.edu/~dimakis/">Alexandros G. Dimakis</a>.
                     Our group moved to Austin in Spring 2013.
                     Prior to that, I spent the first two and a half years of graduate school in the Electrical Engineering Department of the <a href="http://www.usc.edu">University of Southern California</a> in Los Angeles.
-                    I received my Diploma in Electronic and Computer Engineering in 2010 from the <a href="http://www.tuc.en"> Technical University of Crete</a>, Chania, Greece, under the supervision of Assistant Prof. 
+                    I received my Diploma in Electronic and Computer Engineering in 2010 from the <a href="http://www.tuc.gr/3324.html"> Technical University of Crete</a>, Chania, Greece, under the supervision of Assistant Prof. 
                     <a href="http://www.telecom.tuc.gr/~karystinos/">George N. Karystinos</a>.
                 </div>
             </div>
@@ -216,7 +234,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         International Conference on Machine Learning (ICML), Beijing, China, 2014
     </span>
 
@@ -233,19 +251,21 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/nnspca-full.pdf">.pdf</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/nnspca-full.pdf">.pdf</a>
+        </li>
         
         
         
-        <a href="repository/nnspca-icml-2014-slides.pdf">slides.pdf</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/nnspca-icml-2014-slides.pdf">slides.pdf</a>
+        </li>
         
         
-    ]
+    </ul>
     
 </div>
 
@@ -522,7 +542,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         Proceedings of the VLDB Endowment 2013, Riva del Garda, Trento, Italy, 2013
     </span>
 
@@ -541,21 +561,23 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/PVLDB2013-XORingElephants.pdf">.pdf</a>
-        &nbsp;
-        
-        
-        
-        <a href="http://arxiv.org/abs/1301.3791">arXiv</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/PVLDB2013-XORingElephants.pdf">.pdf</a>
+        </li>
         
         
         
+        <li class="link">
+            <a href="http://arxiv.org/abs/1301.3791">arXiv</a>
+        </li>
         
-    ]
+        
+        
+        
+    </ul>
     
 </div>
 
@@ -642,7 +664,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         IEEE ISIT 2012 - International Symposium on Information Theory, Cambridge, MA, 2012
     </span>
 
@@ -661,21 +683,23 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/ISIT2012-RepairableFountainCodes.pdf">.pdf</a>
-        &nbsp;
-        
-        
-        
-        <a href="repository/ISIT2012-RepairableFountainCodes-Presentation.pdf">slides.pdf</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/ISIT2012-RepairableFountainCodes.pdf">.pdf</a>
+        </li>
         
         
         
+        <li class="link">
+            <a href="repository/ISIT2012-RepairableFountainCodes-Presentation.pdf">slides.pdf</a>
+        </li>
         
-    ]
+        
+        
+        
+    </ul>
     
 </div>
 
@@ -800,7 +824,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         IEEE ISIT 2011 - International Symposium on Information Theory, Saint Petersburg, Russia, 2011
     </span>
 
@@ -819,21 +843,23 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/sparsePC-isit2011.pdf">.pdf</a>
-        &nbsp;
-        
-        
-        
-        <a href="repository/sparsePC-matlab.zip">matlab.zip</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/sparsePC-isit2011.pdf">.pdf</a>
+        </li>
         
         
         
+        <li class="link">
+            <a href="repository/sparsePC-matlab.zip">matlab.zip</a>
+        </li>
         
-    ]
+        
+        
+        
+    </ul>
     
 </div>
 
@@ -940,7 +966,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         IEEE Journal on Selected Areas in Communications (JSAC), 2013
     </span>
 
@@ -953,14 +979,15 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/RepairableFountainCodes-jsac2013.pdf">.pdf</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/RepairableFountainCodes-jsac2013.pdf">.pdf</a>
+        </li>
         
         
-    ]
+    </ul>
     
 </div>
 
@@ -1085,7 +1112,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         to appear in IEEE Transactions on Information Theory, (accepted in 2013)
     </span>
 
@@ -1108,26 +1135,29 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/sparsePC-TIT-v13.pdf">preprint.pdf</a>
-        &nbsp;
-        
-        
-        
-        <a href="http://arxiv.org/abs/1312.5891">arXiv</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/sparsePC-TIT-v13.pdf">preprint.pdf</a>
+        </li>
         
         
         
+        <li class="link">
+            <a href="http://arxiv.org/abs/1312.5891">arXiv</a>
+        </li>
         
         
-        <a href="repository/sparsePC-matlab.zip">matlab.zip</a>
-        &nbsp;
         
         
-    ]
+        
+        <li class="link">
+            <a href="repository/sparsePC-matlab.zip">matlab.zip</a>
+        </li>
+        
+        
+    </ul>
     
 </div>
 
@@ -1434,7 +1464,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         IEEE Pervasive Computing, 2013
     </span>
 
@@ -1770,7 +1800,7 @@
         
         
     </ul>
-    <span class="published">
+    <span class="venue">
         2nd International Workshop in Sensing Technologies in Architecture, Forestry and Environment (ECOSENSE), Belgrade, Serbia, 2011
     </span>
 
@@ -1787,19 +1817,21 @@
     
 
     
-    [&nbsp;
+    <ul class="link-list">
         
         
-        <a href="repository/ecosense2011.pdf">.pdf</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/ecosense2011.pdf">.pdf</a>
+        </li>
         
         
         
-        <a href="repository/ecosense2011_poster.pdf">poster.pdf</a>
-        &nbsp;
+        <li class="link">
+            <a href="repository/ecosense2011_poster.pdf">poster.pdf</a>
+        </li>
         
         
-    ]
+    </ul>
     
 </div>
 
@@ -1808,15 +1840,14 @@
             </div> <!-- publications end -->
         </div>
     </div> <!-- row -->
-</div> <!-- container -->
+  </div>
 
 
 
-
+        </div>
       </div>
-    </div>
 
-    <footer class="site-footer">
+      <footer class="site-footer">
 	<!-- Bootstrap core JavaScript
 	 ================================================== -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -1837,7 +1868,6 @@
 		ga('send', 'pageview');
 	</script>
 </footer>
-
 
     </body>
 </html>

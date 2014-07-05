@@ -4,7 +4,7 @@ body {
 	font-family: 'Raleway',sans-serif;
 	text-align: justify;
 	color: #656565;
-	max-width: 979px;
+
 	height:100%;
 	height:100vh;
 	margin:0px;
@@ -74,6 +74,7 @@ a:hover {
 	-webkit-margin-start: 0px;
 	-webkit-margin-end: 0px;
 	-webkit-padding-start: 0px;
+	padding-top: 2px;
 }
 
 .authors-list > li {
@@ -89,11 +90,52 @@ a:hover {
 }
 
 
-.publication-entry .published{
-  /*font-style:italic;*/
-  display:block;
+.publication-entry .venue{
+	/*font-style:italic;*/
+	display: block;
+	padding-top: 2px;
 }
 
-.publication-entry .links{
-	
+/* ----------------------------------------------------------*/
+.publication-entry .link-list{
+	list-style-type:none;
+	display:block;
+	padding-left: 0;
+	margin-bottom: 0;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+	padding-top: 2px;
 }
+
+.publication-entry .link-list::before{
+	content: "[";
+	vertical-align: middle;
+	font-size: 150%;
+}
+
+.publication-entry .link-list::after{
+	content: "]";
+	vertical-align: middle;
+	font-size: 150%;
+}
+
+.publication-entry .link-list > .link {
+    display:inline;
+}
+
+.publication-entry .link::before{
+	content: '\0000a0';
+}
+
+.publication-entry .link:last-of-type:after{
+	content: '\0000a0';
+}
+/* ----------------------------------------------------------*/
+
+
+
+
+
