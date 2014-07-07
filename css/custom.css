@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-	color: #FF5C00;
+	color: #F2A900;
 	text-decoration: none;
 	-webkit-transition: all .25s;
 	-moz-transition: all .25s;
@@ -57,7 +57,7 @@ a:hover {
 }
 
 .publication-entry .title{
-	color: #FF5C00;
+	color: #BF5700;
 	display:block;
 	font-weight:500;
 	font-size: 110%;
