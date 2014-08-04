@@ -47,6 +47,7 @@ a:hover {
     margin-bottom:20pt;
 }
 
+/*
 .publication-entry:hover {
     border-left: thick solid #404040;
     transition-property: all;
@@ -54,7 +55,7 @@ a:hover {
 	transition-timing-function: initial;
 	transition-delay: initial;
 	-webkit-transition-duration: .5s; /* for Safari & Chrome */
-}
+/*}*/
 
 .publication-entry .title{
 	color: #BF5700;
