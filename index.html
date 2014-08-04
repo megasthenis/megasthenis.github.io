@@ -135,24 +135,25 @@
     
     <div class="collapse-group">
           <div class="collapse abstract" id="abstract-nnspca-2014" toggler="#abstract-toggler-nnspca-2014">
-            <p>We introduce a novel algorithm to compute nonnegative sparse principal components 
-of positive semidefinite (PSD) matrices.
-Our algorithm comes with approximation guarantees 
-contingent on the spectral profile of the input matrix \(\mathbf{A}\):
-the sharper the eigenvalue decay, the better the quality of the approximation.
+            <p>
+  We introduce a novel algorithm to compute nonnegative sparse principal components 
+  of positive semidefinite (PSD) matrices.
+  Our algorithm comes with approximation guarantees 
+  contingent on the spectral profile of the input matrix \(\mathbf{A}\):
+  the sharper the eigenvalue decay, the better the quality of the approximation.
 </p>
 <p>
-If the eigenvalues decay like any asymptotically vanishing function, 
-we can approximate nonnegative sparse PCA within any accuracy \(\epsilon\) in time 
-polynomial in the matrix dimension \(n\) and desired sparsity \(k\), but not in \(1/\epsilon\).
-Further, we obtain a data dependent bound that is computed by executing an algorithm on a given data set. 
-This bound is significantly tighter than <i>a-priori</i> bounds and
-can be used to show that for all tested datasets our algorithm is provably  
-within 40%-90% from the unknown optimum. 
+  If the eigenvalues decay like any asymptotically vanishing function, 
+  we can approximate nonnegative sparse PCA within any accuracy \(\epsilon\) in time 
+  polynomial in the matrix dimension \(n\) and desired sparsity \(k\), but not in \(1/\epsilon\).
+  Further, we obtain a data dependent bound that is computed by executing an algorithm on a given data set. 
+  This bound is significantly tighter than <i>a-priori</i> bounds and
+  can be used to show that for all tested datasets our algorithm is provably  
+  within 40%-90% from the unknown optimum.
 </p>
 <p>
-Our algorithm is combinatorial and explores a subspace defined by the leading eigenvectors of \(\mathbf{A}\).
-We test our scheme on several data sets, showing that it matches or outperforms the previous state of the art.
+  Our algorithm is combinatorial and explores a subspace defined by the leading eigenvectors of \(\mathbf{A}\).
+  We test our scheme on several data sets, showing that it matches or outperforms the previous state of the art.
 </p>
 
           </div>
@@ -348,20 +349,20 @@ We test our scheme on several data sets, showing that it matches or outperforms 
     <div class="collapse-group">
           <div class="collapse abstract" id="abstract-xorbas-2013" toggler="#abstract-toggler-xorbas-2013">
             <p>
-Distributed storage systems for large clusters typically use replication to provide reliability. 
-Recently, erasure codes have been used to reduce the large storage overhead of three-replicated systems. 
-Reed-Solomon codes are the standard design choice and their high repair cost is often considered an unavoidable price to pay for high storage efficiency and high reliability.
+  Distributed storage systems for large clusters typically use replication to provide reliability. 
+  Recently, erasure codes have been used to reduce the large storage overhead of three-replicated systems. 
+  Reed-Solomon codes are the standard design choice and their high repair cost is often considered an unavoidable price to pay for high storage efficiency and high reliability.
 </p>
 <p>
-This paper shows how to overcome this limitation. 
-We present a novel family of erasure codes that are efficiently repairable and offer higher reliability compared to Reed-Solomon codes. 
-We show analytically that our codes are optimal on a recently identified tradeoff between locality and minimum distance.
+  This paper shows how to overcome this limitation. 
+  We present a novel family of erasure codes that are efficiently repairable and offer higher reliability compared to Reed-Solomon codes. 
+  We show analytically that our codes are optimal on a recently identified tradeoff between locality and minimum distance.
 </p>
 <p>
-We implement our new codes in Hadoop HDFS and compare to a currently deployed HDFS module that uses Reed-Solomon codes. 
-Our modified HDFS implementation shows a reduction of approximately 2x on the repair disk I/O and repair network traffic. 
-The disadvantage of the new coding scheme is that it requires 14% more storage compared to Reed-Solomon codes, an overhead shown to be information theoretically optimal to obtain locality. 
-Because the new codes repair failures faster, this provides higher reliability, which is orders of magnitude higher compared to replication.
+  We implement our new codes in Hadoop HDFS and compare to a currently deployed HDFS module that uses Reed-Solomon codes. 
+  Our modified HDFS implementation shows a reduction of approximately 2x on the repair disk I/O and repair network traffic. 
+  The disadvantage of the new coding scheme is that it requires 14% more storage compared to Reed-Solomon codes, an overhead shown to be information theoretically optimal to obtain locality. 
+  Because the new codes repair failures faster, this provides higher reliability, which is orders of magnitude higher compared to replication.
 </p>
 
           </div>
@@ -726,14 +727,14 @@ Because the new codes repair failures faster, this provides higher reliability, 
     <div class="collapse-group">
           <div class="collapse abstract" id="abstract-repfount-2012" toggler="#abstract-toggler-repfount-2012">
             <p>
-We introduce a new family of Fountain codes that are systematic and also have sparse parities.
-Although this is impossible if we require the code to be MDS, we show it can be achieved if we relax our requirement into a near-MDS property. 
-More concretely, for any \(\epsilon\) we construct codes that guarantee that a random subset of \((1 + \epsilon)k\) symbols sufﬁces to recover the original symbols with high probability. 
-Our codes produce an unbounded number of output symbols, creating each parity independently by linearly combining a logarithmic number of input symbols. 
-This structure has the additional beneﬁt of logarithmic locality: a single symbol loss can be repaired by accessing only \(O(\log k)\) other coded symbols. 
-This is a desired property for distributed storage systems where symbols are spread over a network of storage nodes. 
-Our mathematical contribution involves analyzing the rank of sparse random matrices over ﬁnite ﬁelds. 
-We rely on establishing that a new family of sparse random bipartite graphs have large matchings with high probability.
+  We introduce a new family of Fountain codes that are systematic and also have sparse parities.
+  Although this is impossible if we require the code to be MDS, we show it can be achieved if we relax our requirement into a near-MDS property. 
+  More concretely, for any \(\epsilon\) we construct codes that guarantee that a random subset of \((1 + \epsilon)k\) symbols sufﬁces to recover the original symbols with high probability. 
+  Our codes produce an unbounded number of output symbols, creating each parity independently by linearly combining a logarithmic number of input symbols. 
+  This structure has the additional beneﬁt of logarithmic locality: a single symbol loss can be repaired by accessing only \(O(\log k)\) other coded symbols. 
+  This is a desired property for distributed storage systems where symbols are spread over a network of storage nodes. 
+  Our mathematical contribution involves analyzing the rank of sparse random matrices over ﬁnite ﬁelds. 
+  We rely on establishing that a new family of sparse random bipartite graphs have large matchings with high probability.
 </p>
 
           </div>
@@ -893,11 +894,11 @@ We rely on establishing that a new family of sparse random bipartite graphs have
     <div class="collapse-group">
           <div class="collapse abstract" id="abstract-asteris-sparsepca-2011" toggler="#abstract-toggler-asteris-sparsepca-2011">
             <p>
-We consider the problem of identifying the sparse principal component of a rank-deficient matrix.
-We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets 
-(that is, sets of indices to the nonzero elements of the vector argument) whose size is polynomially bounded, in terms of rank, 
-and contains the optimal index-set, <i>i.e.,</i> the index-set of the nonzero elements of the optimal solution.
-Finally, we develop an algorithm that computes the optimal sparse principal component in polynomial time for any sparsity degree.
+  We consider the problem of identifying the sparse principal component of a rank-deficient matrix.
+  We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets 
+  (that is, sets of indices to the nonzero elements of the vector argument) whose size is polynomially bounded, in terms of rank, 
+  and contains the optimal index-set, <i>i.e.,</i> the index-set of the nonzero elements of the optimal solution.
+  Finally, we develop an algorithm that computes the optimal sparse principal component in polynomial time for any sparsity degree.
 </p>
 
           </div>
@@ -1117,27 +1118,27 @@ Finally, we develop an algorithm that computes the optimal sparse principal comp
     <div class="collapse-group">
           <div class="collapse abstract" id="abstract-asteris-repfount-2012" toggler="#abstract-toggler-asteris-repfount-2012">
             <p>
-We introduce a new family of Fountain codes that are systematic and also have sparse parities.
-Given an input of \(k\) symbols, our codes produce an unbounded number of output symbols, 
-generating each parity independently by linearly combining a logarithmic number of randomly selected input symbols.
-The construction guarantees that for any \(\epsilon>0\) accessing a random subset
-of \((1+\epsilon)k\) encoded symbols, asymptotically suffices to recover the
-\(k\) input symbols with high probability.
+  We introduce a new family of Fountain codes that are systematic and also have sparse parities.
+  Given an input of \(k\) symbols, our codes produce an unbounded number of output symbols, 
+  generating each parity independently by linearly combining a logarithmic number of randomly selected input symbols.
+  The construction guarantees that for any \(\epsilon>0\) accessing a random subset
+  of \((1+\epsilon)k\) encoded symbols, asymptotically suffices to recover the
+  \(k\) input symbols with high probability.
 </p>
 <p>
-Our codes have the additional benefit of logarithmic locality: a single lost
-symbol can be repaired by accessing a subset of \(O(\log k)\) of the remaining
-encoded symbols.
-This is a desired property for distributed storage  systems where symbols  are
-spread over a network of storage nodes.
-Beyond recovery upon loss, local reconstruction provides an efficient
-alternative for reading symbols that cannot be accessed directly.
-In our code, a logarithmic number of disjoint local groups is associated
-with each systematic symbol, allowing <i>multiple parallel reads</i>.
+  Our codes have the additional benefit of logarithmic locality: a single lost
+  symbol can be repaired by accessing a subset of \(O(\log k)\) of the remaining
+  encoded symbols.
+  This is a desired property for distributed storage  systems where symbols  are
+  spread over a network of storage nodes.
+  Beyond recovery upon loss, local reconstruction provides an efficient
+  alternative for reading symbols that cannot be accessed directly.
+  In our code, a logarithmic number of disjoint local groups is associated
+  with each systematic symbol, allowing <i>multiple parallel reads</i>.
 </p>
 <p>
-Our main mathematical contribution involves analyzing the rank of sparse random matrices with specific structure over finite fields.
-We rely on establishing that a new family of sparse random bipartite graphs have perfect matchings with high probability.  
+  Our main mathematical contribution involves analyzing the rank of sparse random matrices with specific structure over finite fields.
+  We rely on establishing that a new family of sparse random bipartite graphs have perfect matchings with high probability.
 </p>
 
           </div>
