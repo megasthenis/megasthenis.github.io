@@ -102,6 +102,21 @@ To add new posts, simply add a file in the <code>_posts</code> directory that fo
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
 	
+	<script type="text/javascript"
+    	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+	<script type="text/javascript">
+		$('.collapse').on('hidden.bs.collapse', function (e) {
+		  var box = $(e.target);
+		  //$(box.attr('toggler')).find('.symbol').text('(+)');
+		  $(box.attr('toggler')).find('.symbol').removeClass('symbol-contract').addClass('symbol-expand');
+		})
+		$('.collapse').on('show.bs.collapse', function (e) {
+		  var box = $(e.target);
+		  $(box.attr('toggler')).find('.symbol').removeClass('symbol-expand').addClass('symbol-contract');
+		})
+	</script>
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

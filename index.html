@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
+    <title>Megas</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Megasthenis Asteris">
     <link rel="canonical" href="http://megasthenis.github.io/">
@@ -124,7 +124,59 @@
             
 
 <div class="publication-entry">
-    <span class="title">Nonnegative Sparse PCA with provable guarantees</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-nnspca-2014" id="abstract-toggler-nnspca-2014">
+        Nonnegative Sparse PCA with Provable Guarantees
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    <a data-toggle="collapse" data-target="#bibtex-nnspca-2014" id="bibtex-toggler-nnspca-2014" class="bib-toggler">
+        Bib
+    </a>
+    
+    <div class="collapse-group">
+          <div class="collapse abstract" id="abstract-nnspca-2014" toggler="#abstract-toggler-nnspca-2014">
+            <p>We introduce a novel algorithm to compute nonnegative sparse principal components 
+of positive semidefinite (PSD) matrices.
+Our algorithm comes with approximation guarantees 
+contingent on the spectral profile of the input matrix \(\mathbf{A}\):
+the sharper the eigenvalue decay, the better the quality of the approximation.
+</p>
+<p>
+If the eigenvalues decay like any asymptotically vanishing function, 
+we can approximate nonnegative sparse PCA within any accuracy \(\epsilon\) in time 
+polynomial in the matrix dimension \(n\) and desired sparsity \(k\), but not in \(1/\epsilon\).
+Further, we obtain a data dependent bound that is computed by executing an algorithm on a given data set. 
+This bound is significantly tighter than <i>a-priori</i> bounds and
+can be used to show that for all tested datasets our algorithm is provably  
+within 40%-90% from the unknown optimum. 
+</p>
+<p>
+Our algorithm is combinatorial and explores a subspace defined by the leading eigenvectors of \(\mathbf{A}\).
+We test our scheme on several data sets, showing that it matches or outperforms the previous state of the art.
+</p>
+
+          </div>
+    </div>
+    
+
+    
+    <div class="collapse-group">
+        <div class="collapse bibtex" id="bibtex-nnspca-2014" toggler="#bibtex-toggler-nnspca-2014">
+<pre id="nnspca-2014"><code>@<span class="keyword">inproceedings</span>{<span>nnspca:2014</span>,
+  <span class="constant">author</span> = {<span class="value">Megasthenis Asteris, Dimitris Papailiopoulos, Alexandros Dimakis</span>},
+  <span class="constant">title</span> = {<span class="value">Nonnegative Sparse PCA with Provable Guarantees</span>},
+  <span class="constant">year</span> = {<span class="value">2014</span>},
+  <span class="constant">pages</span> = {<span class="value">1728--1736</span>},
+  <span class="constant">booktitle</span> = {<span class="value">Proceedings of the 31st International Conference on Machine Learning (ICML-14)</span>},
+  <span class="constant">editor</span> = {<span class="value">Tony Jebara and Eric P. Xing</span>},
+  <span class="constant">publisher</span> = {<span class="value">JMLR Workshop and Conference Proceedings</span>},
+  <span class="constant">url</span> = {<span class="value">http://jmlr.org/proceedings/papers/v32/asteris14.pdf</span>},
+}
+</code></pre>
+        </div>
+    </div>
+    
+    
     <ul class="authors-list">
         
         
@@ -246,10 +298,10 @@
         
         
     </ul>
-    <span class="venue">
-        International Conference on Machine Learning (ICML), Beijing, China, 2014
-    </span>
 
+    <span class="venue">
+       International Conference on Machine Learning (ICML), Beijing, China, 2014
+    </span>
 
     
     
@@ -284,7 +336,61 @@
 
 
 <div class="publication-entry">
-    <span class="title">XORing elephants: novel erasure codes for big data</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-xorbas-2013" id="abstract-toggler-xorbas-2013">
+        XORing elephants: novel erasure codes for big data
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    <a data-toggle="collapse" data-target="#bibtex-xorbas-2013" id="bibtex-toggler-xorbas-2013" class="bib-toggler">
+        Bib
+    </a>
+    
+    <div class="collapse-group">
+          <div class="collapse abstract" id="abstract-xorbas-2013" toggler="#abstract-toggler-xorbas-2013">
+            <p>
+Distributed storage systems for large clusters typically use replication to provide reliability. 
+Recently, erasure codes have been used to reduce the large storage overhead of three-replicated systems. 
+Reed-Solomon codes are the standard design choice and their high repair cost is often considered an unavoidable price to pay for high storage efficiency and high reliability.
+</p>
+<p>
+This paper shows how to overcome this limitation. 
+We present a novel family of erasure codes that are efficiently repairable and offer higher reliability compared to Reed-Solomon codes. 
+We show analytically that our codes are optimal on a recently identified tradeoff between locality and minimum distance.
+</p>
+<p>
+We implement our new codes in Hadoop HDFS and compare to a currently deployed HDFS module that uses Reed-Solomon codes. 
+Our modified HDFS implementation shows a reduction of approximately 2x on the repair disk I/O and repair network traffic. 
+The disadvantage of the new coding scheme is that it requires 14% more storage compared to Reed-Solomon codes, an overhead shown to be information theoretically optimal to obtain locality. 
+Because the new codes repair failures faster, this provides higher reliability, which is orders of magnitude higher compared to replication.
+</p>
+
+          </div>
+    </div>
+    
+
+    
+    <div class="collapse-group">
+        <div class="collapse bibtex" id="bibtex-xorbas-2013" toggler="#bibtex-toggler-xorbas-2013">
+<pre id="xorbas-2013"><code>@<span class="keyword">inproceedings</span>{<span>xorbas:2013</span>,
+  <span class="constant">author</span> = {<span class="value">Sathiamoorthy, Maheswaran and Asteris, Megasthenis and Papailiopoulos, Dimitris and Dimakis, Alexandros G. and Vadali, Ramkumar and Chen, Scott and Borthakur, Dhruba</span>},
+  <span class="constant">title</span> = {<span class="value">XORing elephants: novel erasure codes for big data</span>},
+  <span class="constant">journal</span> = {<span class="value">Proc. VLDB Endow.</span>},
+  <span class="constant">volume</span> = {<span class="value">6</span>},
+  <span class="constant">number</span> = {<span class="value">5</span>},
+  <span class="constant">pages</span> = {<span class="value">325--336</span>},
+  <span class="constant">numpages</span> = {<span class="value">12</span>},
+  <span class="constant">publisher</span> = {<span class="value">VLDB Endowment</span>},
+  <span class="constant">year</span> = {<span class="value">2013</span>},
+  <span class="constant">month</span> = {<span class="value">March</span>},
+  <span class="constant">issn</span> = {<span class="value">2150-8097</span>},
+  <span class="constant">acmid</span> = {<span class="value">2488339</span>},
+  <span class="constant">url</span> = {<span class="value">http://dl.acm.org/citation.cfm?id=2535573.2488339</span>},
+}
+</code></pre>
+        </div>
+    </div>
+    
+    
     <ul class="authors-list">
         
         
@@ -566,10 +672,10 @@
         
         
     </ul>
-    <span class="venue">
-        Proceedings of the VLDB Endowment 2013, Riva del Garda, Trento, Italy, 2013
-    </span>
 
+    <span class="venue">
+       Proceedings of the VLDB Endowment 2013, Riva del Garda, Trento, Italy, 2013
+    </span>
 
     
     
@@ -608,7 +714,50 @@
 
 
 <div class="publication-entry">
-    <span class="title">Repairable Fountain codes</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-repfount-2012" id="abstract-toggler-repfount-2012">
+        Repairable Fountain codes
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    <a data-toggle="collapse" data-target="#bibtex-repfount-2012" id="bibtex-toggler-repfount-2012" class="bib-toggler">
+        Bib
+    </a>
+    
+    <div class="collapse-group">
+          <div class="collapse abstract" id="abstract-repfount-2012" toggler="#abstract-toggler-repfount-2012">
+            <p>
+We introduce a new family of Fountain codes that are systematic and also have sparse parities.
+Although this is impossible if we require the code to be MDS, we show it can be achieved if we relax our requirement into a near-MDS property. 
+More concretely, for any \(\epsilon\) we construct codes that guarantee that a random subset of \((1 + \epsilon)k\) symbols sufﬁces to recover the original symbols with high probability. 
+Our codes produce an unbounded number of output symbols, creating each parity independently by linearly combining a logarithmic number of input symbols. 
+This structure has the additional beneﬁt of logarithmic locality: a single symbol loss can be repaired by accessing only \(O(\log k)\) other coded symbols. 
+This is a desired property for distributed storage systems where symbols are spread over a network of storage nodes. 
+Our mathematical contribution involves analyzing the rank of sparse random matrices over ﬁnite ﬁelds. 
+We rely on establishing that a new family of sparse random bipartite graphs have large matchings with high probability.
+</p>
+
+          </div>
+    </div>
+    
+
+    
+    <div class="collapse-group">
+        <div class="collapse bibtex" id="bibtex-repfount-2012" toggler="#bibtex-toggler-repfount-2012">
+<pre id="repfount-2012"><code>@<span class="keyword">inproceedings</span>{<span>repfount:2012</span>,
+  <span class="constant">author</span> = {<span class="value">Asteris, M. and Dimakis, A.G.</span>},
+  <span class="constant">title</span> = {<span class="value">Repairable Fountain codes</span>},
+  <span class="constant">booktitle</span> = {<span class="value">Information Theory Proceedings (ISIT), 2012 IEEE International Symposium on</span>},
+  <span class="constant">pages</span> = {<span class="value">1752--1756</span>},
+  <span class="constant">year</span> = {<span class="value">2012</span>},
+  <span class="constant">month</span> = {<span class="value">July</span>},
+  <span class="constant">issn</span> = {<span class="value">2157-8095</span>},
+  <span class="constant">doi</span> = {<span class="value">10.1109/ISIT.2012.6283579</span>},
+}
+</code></pre>
+        </div>
+    </div>
+    
+    
     <ul class="authors-list">
         
         
@@ -690,10 +839,10 @@
         
         
     </ul>
-    <span class="venue">
-        IEEE ISIT 2012 - International Symposium on Information Theory, Cambridge, MA, 2012
-    </span>
 
+    <span class="venue">
+       IEEE ISIT 2012 - International Symposium on Information Theory, Cambridge, MA, 2012
+    </span>
 
     
     
@@ -732,7 +881,47 @@
 
 
 <div class="publication-entry">
-    <span class="title">Sparse principal component of a rank-deficient matrix</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-asteris-sparsepca-2011" id="abstract-toggler-asteris-sparsepca-2011">
+        Sparse principal component of a rank-deficient matrix
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    <a data-toggle="collapse" data-target="#bibtex-asteris-sparsepca-2011" id="bibtex-toggler-asteris-sparsepca-2011" class="bib-toggler">
+        Bib
+    </a>
+    
+    <div class="collapse-group">
+          <div class="collapse abstract" id="abstract-asteris-sparsepca-2011" toggler="#abstract-toggler-asteris-sparsepca-2011">
+            <p>
+We consider the problem of identifying the sparse principal component of a rank-deficient matrix.
+We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets 
+(that is, sets of indices to the nonzero elements of the vector argument) whose size is polynomially bounded, in terms of rank, 
+and contains the optimal index-set, <i>i.e.,</i> the index-set of the nonzero elements of the optimal solution.
+Finally, we develop an algorithm that computes the optimal sparse principal component in polynomial time for any sparsity degree.
+</p>
+
+          </div>
+    </div>
+    
+
+    
+    <div class="collapse-group">
+        <div class="collapse bibtex" id="bibtex-asteris-sparsepca-2011" toggler="#bibtex-toggler-asteris-sparsepca-2011">
+<pre id="asteris-sparsepca-2011"><code>@<span class="keyword">inproceedings</span>{<span>asteris:spca:2011</span>,
+  <span class="constant">author</span> = {<span class="value">Asteris, M. and Papailiopoulos, D.S. and Karystinos, G.N.</span>},
+  <span class="constant">title</span> = {<span class="value">Sparse principal component of a rank-deficient matrix</span>},
+  <span class="constant">booktitle</span> = {<span class="value">Information Theory Proceedings (ISIT), 2011 IEEE International Symposium on</span>},
+  <span class="constant">pages</span> = {<span class="value">673--677</span>},
+  <span class="constant">year</span> = {<span class="value">2011</span>},
+  <span class="constant">month</span> = {<span class="value">March</span>},
+  <span class="constant">issn</span> = {<span class="value">2157-8095</span>},
+  <span class="constant">doi</span> = {<span class="value">10.1109/ISIT.2011.6034216</span>},
+}
+</code></pre>
+        </div>
+    </div>
+    
+    
     <ul class="authors-list">
         
         
@@ -854,10 +1043,10 @@
         
         
     </ul>
-    <span class="venue">
-        IEEE ISIT 2011 - International Symposium on Information Theory, Saint Petersburg, Russia, 2011
-    </span>
 
+    <span class="venue">
+       IEEE ISIT 2011 - International Symposium on Information Theory, Saint Petersburg, Russia, 2011
+    </span>
 
     
     
@@ -916,7 +1105,65 @@
 
 
 <div class="publication-entry">
-    <span class="title">Repairable Fountain Codes</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-asteris-repfount-2012" id="abstract-toggler-asteris-repfount-2012">
+        Repairable Fountain Codes
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    <a data-toggle="collapse" data-target="#bibtex-asteris-repfount-2012" id="bibtex-toggler-asteris-repfount-2012" class="bib-toggler">
+        Bib
+    </a>
+    
+    <div class="collapse-group">
+          <div class="collapse abstract" id="abstract-asteris-repfount-2012" toggler="#abstract-toggler-asteris-repfount-2012">
+            <p>
+We introduce a new family of Fountain codes that are systematic and also have sparse parities.
+Given an input of \(k\) symbols, our codes produce an unbounded number of output symbols, 
+generating each parity independently by linearly combining a logarithmic number of randomly selected input symbols.
+The construction guarantees that for any \(\epsilon>0\) accessing a random subset
+of \((1+\epsilon)k\) encoded symbols, asymptotically suffices to recover the
+\(k\) input symbols with high probability.
+</p>
+<p>
+Our codes have the additional benefit of logarithmic locality: a single lost
+symbol can be repaired by accessing a subset of \(O(\log k)\) of the remaining
+encoded symbols.
+This is a desired property for distributed storage  systems where symbols  are
+spread over a network of storage nodes.
+Beyond recovery upon loss, local reconstruction provides an efficient
+alternative for reading symbols that cannot be accessed directly.
+In our code, a logarithmic number of disjoint local groups is associated
+with each systematic symbol, allowing <i>multiple parallel reads</i>.
+</p>
+<p>
+Our main mathematical contribution involves analyzing the rank of sparse random matrices with specific structure over finite fields.
+We rely on establishing that a new family of sparse random bipartite graphs have perfect matchings with high probability.  
+</p>
+
+          </div>
+    </div>
+    
+
+    
+    <div class="collapse-group">
+        <div class="collapse bibtex" id="bibtex-asteris-repfount-2012" toggler="#bibtex-toggler-asteris-repfount-2012">
+<pre id="asteris-repfount-2012"><code>@<span class="keyword">article</span>{<span>repfount:2012</span>,
+  <span class="constant">author</span> = {<span class="value">Asteris, M. and Dimakis, AG.</span>},
+  <span class="constant">journal</span> = {<span class="value">Selected Areas in Communications, IEEE Journal on</span>},
+  <span class="constant">title</span> = {<span class="value">Repairable Fountain Codes</span>},
+  <span class="constant">year</span> = {<span class="value">2014</span>},
+  <span class="constant">month</span> = {<span class="value">May</span>},
+  <span class="constant">volume</span> = {<span class="value">32</span>},
+  <span class="constant">number</span> = {<span class="value">5</span>},
+  <span class="constant">pages</span> = {<span class="value">1037--1047</span>},
+  <span class="constant">doi</span> = {<span class="value">10.1109/JSAC.2014.140522</span>},
+  <span class="constant">issn</span> = {<span class="value">0733-8716</span>},
+}
+</code></pre>
+        </div>
+    </div>
+    
+    
     <ul class="authors-list">
         
         
@@ -998,10 +1245,10 @@
         
         
     </ul>
-    <span class="venue">
-        IEEE Journal on Selected Areas in Communications (JSAC), 2013
-    </span>
 
+    <span class="venue">
+       IEEE Journal on Selected Areas in Communications (JSAC), 2014
+    </span>
 
     
     
@@ -1026,7 +1273,11 @@
 
 
 <div class="publication-entry">
-    <span class="title">The Sparse Principal Component of a Constant-rank Matrix</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-asteris-spca-2013" id="abstract-toggler-asteris-spca-2013">
+        The Sparse Principal Component of a Constant-rank Matrix
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
     <ul class="authors-list">
         
         
@@ -1148,10 +1399,10 @@
         
         
     </ul>
-    <span class="venue">
-        to appear in IEEE Transactions on Information Theory, (accepted in 2013)
-    </span>
 
+    <span class="venue">
+       to appear in IEEE Transactions on Information Theory, 
+    </span>
 
     
     
@@ -1200,7 +1451,43 @@
 
 
 <div class="publication-entry">
-    <span class="title">Building the Low-Cost Digital Garden as a Telecom Lab Exercise</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-digital-garden-2013" id="abstract-toggler-digital-garden-2013">
+        Building a Low-Cost Digital Garden as a Telecom Lab Exercise
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    <a data-toggle="collapse" data-target="#bibtex-digital-garden-2013" id="bibtex-toggler-digital-garden-2013" class="bib-toggler">
+        Bib
+    </a>
+    
+    <div class="collapse-group">
+          <div class="collapse abstract" id="abstract-digital-garden-2013" toggler="#abstract-toggler-digital-garden-2013">
+            In an interdisciplinary, semester-long class, undergraduate students learn how to build a low-cost, multihop wireless sensor network from first principles for a digital garden. This type of course better prepares electrical engineering graduates for the sensor-rich, pervasive computing era.
+
+          </div>
+    </div>
+    
+
+    
+    <div class="collapse-group">
+        <div class="collapse bibtex" id="bibtex-digital-garden-2013" toggler="#bibtex-toggler-digital-garden-2013">
+<pre id="digital-garden-2013"><code>@<span class="keyword">inproceedings</span>{<span>digitalgarden:2013</span>,
+  <span class="constant">author</span> = {<span class="value">Bletsas, A and Vlachaki, A and Kampianakis, E. and Sklivanitis, G. and Kimionis, J. and Tountas, K. and Asteris, M. and Markopoulos, P.</span>},
+  <span class="constant">journal</span> = {<span class="value">Pervasive Computing, IEEE</span>},
+  <span class="constant">title</span> = {<span class="value">Building a Low-Cost Digital Garden as a Telecom Lab Exercise</span>},
+  <span class="constant">year</span> = {<span class="value">2013</span>},
+  <span class="constant">month</span> = {<span class="value">Jan</span>},
+  <span class="constant">volume</span> = {<span class="value">12</span>},
+  <span class="constant">number</span> = {<span class="value">1</span>},
+  <span class="constant">pages</span> = {<span class="value">48--57</span>},
+  <span class="constant">doi</span> = {<span class="value">10.1109/MPRV.2011.83</span>},
+  <span class="constant">issn</span> = {<span class="value">1536-1268</span>},
+}
+</code></pre>
+        </div>
+    </div>
+    
+    
     <ul class="authors-list">
         
         
@@ -1512,10 +1799,10 @@
         
         
     </ul>
-    <span class="venue">
-        IEEE Pervasive Computing, 2013
-    </span>
 
+    <span class="venue">
+       IEEE Pervasive Computing, 2013
+    </span>
 
     
     
@@ -1548,7 +1835,11 @@
 
 
 <div class="publication-entry">
-    <span class="title">Towards precision agriculture: Building a soil wetness multi-hop WSN from first principles</span>
+    <span class="title" data-toggle="collapse" data-target="#abstract-wsn-principles-2013" id="abstract-toggler-wsn-principles-2013">
+        Towards precision agriculture: Building a soil wetness multi-hop WSN from first principles
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
     <ul class="authors-list">
         
         
@@ -1860,10 +2151,10 @@
         
         
     </ul>
-    <span class="venue">
-        2nd International Workshop in Sensing Technologies in Architecture, Forestry and Environment (ECOSENSE), Belgrade, Serbia, 2011
-    </span>
 
+    <span class="venue">
+       2nd International Workshop in Sensing Technologies in Architecture, Forestry and Environment (ECOSENSE), Belgrade, Serbia, 
+    </span>
 
     
     
@@ -1913,6 +2204,21 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
 	
+	<script type="text/javascript"
+    	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+	<script type="text/javascript">
+		$('.collapse').on('hidden.bs.collapse', function (e) {
+		  var box = $(e.target);
+		  //$(box.attr('toggler')).find('.symbol').text('(+)');
+		  $(box.attr('toggler')).find('.symbol').removeClass('symbol-contract').addClass('symbol-expand');
+		})
+		$('.collapse').on('show.bs.collapse', function (e) {
+		  var box = $(e.target);
+		  $(box.attr('toggler')).find('.symbol').removeClass('symbol-expand').addClass('symbol-contract');
+		})
+	</script>
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>

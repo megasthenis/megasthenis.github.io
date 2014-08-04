@@ -58,7 +58,7 @@ a:hover {
 
 .publication-entry .title{
 	color: #BF5700;
-	display:block;
+
 	font-weight:500;
 	font-size: 110%;
 }
@@ -136,6 +136,65 @@ a:hover {
 /* ----------------------------------------------------------*/
 
 
+.publication-entry .bibtex pre{
+	display: block;
+	background-color: #eee;
+	font-family: monospace;
+	white-space: pre;
+	margin: 0px 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom:  0px;
+	padding-right: 0px;
+	color: inherit;
+}
 
+.publication-entry .bibtex pre > code{
+	display: block;
+	padding: .5em;
+	font-family: monospace;
+}
 
+.publication-entry .bibtex .keyword{
+	color: #BF5700
+}
 
+.publication-entry .bibtex .constant{
+	color: #268bd2;
+	font-size: 90%;
+	line-height: 200%;
+}
+
+.publication-entry .abstract{
+	text-align:justify;
+	border: 1px solid #eee;
+	padding-left: .5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	padding-right: .5em;
+	border-radius: 4px;
+	border-left: 3px solid #BF5700;
+}
+
+.publication-entry .abstract p{
+	text-indent: 1em;
+}
+
+.symbol{
+	font-family: "Courier New", monospace;
+	vertical-align: middle;
+}
+.symbol-expand:after{
+	content: "+";
+}
+.symbol-contract:after{
+	content: "-";
+}
+
+.bib-toggler{
+	color: #999;
+}
+.bib-toggler:before{
+	color: #999;
+	content: "| ";
+}
