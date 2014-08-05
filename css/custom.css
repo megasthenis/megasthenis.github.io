@@ -136,8 +136,12 @@ a:hover {
 }
 /* ----------------------------------------------------------*/
 
+.bibtex-wrapper {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
 
-.publication-entry .bibtex pre{
+.bibtex pre{
 	display: block;
 	background-color: #eee;
 	font-family: monospace;
@@ -150,23 +154,29 @@ a:hover {
 	margin-bottom: 0.5em;
 }
 
-.publication-entry .bibtex pre > code{
+.bibtex pre > code{
 	display: block;
 	padding: .5em;
 	font-family: monospace;
 }
 
-.publication-entry .bibtex .keyword{
+.bibtex .keyword{
 	color: #BF5700
 }
 
-.publication-entry .bibtex .constant{
+.bibtex .constant{
 	color: #268bd2;
 	font-size: 90%;
 	line-height: 200%;
 }
 
-.publication-entry .abstract{
+/* ----------------------------------------------------------*/
+.abstract-wrapper {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.abstract{
 	text-align:justify;
 	border: 1px solid #eee;
 	padding-left: .5em;
@@ -175,11 +185,10 @@ a:hover {
 	padding-right: .5em;
 	border-radius: 4px;
 	border-left: 3px solid #BF5700;
-	margin-bottom: 0.5em;
 }
 
-.publication-entry .abstract p{
-	text-indent: 1em;
+.abstract p{
+	text-indent: 0em;
 }
 
 .symbol{
