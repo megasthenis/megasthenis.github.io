@@ -98,7 +98,7 @@
               </div>
           </div>
           <div class="col-sm-2 col-md-4">
-            
+
           </div>
         </div>
 
@@ -106,11 +106,11 @@
         <div class="row">
             <div class="col-md-12">
                 <h2></h2>
-                I am a graduate student in the ECE Department of the <a href="https://www.utexas.edu/">University of Texas at Austin</a>, under 
+                I am a graduate student in the ECE Department of the <a href="https://www.utexas.edu/">University of Texas at Austin</a>, under
                 <a href="http://users.ece.utexas.edu/~dimakis/">Alexandros G. Dimakis</a>.
                 Our group moved to Austin in Spring 2013.
                 Prior to that, I spent the first two and a half years of graduate school in the Electrical Engineering Department of the <a href="http://www.usc.edu">University of Southern California</a> in Los Angeles.
-                I received my Diploma in Electronic and Computer Engineering in 2010 from the <a href="http://www.tuc.gr/3324.html"> Technical University of Crete</a>, Chania, Greece, under the supervision of Assistant Prof. 
+                I received my Diploma in Electronic and Computer Engineering in 2010 from the <a href="http://www.tuc.gr/3324.html"> Technical University of Crete</a>, Chania, Greece, under the supervision of Assistant Prof.
                 <a href="http://www.telecom.tuc.gr/~karystinos/">George N. Karystinos</a>.
             </div>
         </div>
@@ -119,9 +119,202 @@
           <div class="col-md-12">
             <h2>Publications</h2>
 
+            <h3>Preprints</h3>
+            
+            
+
+<div class="publication-entry">
+    <span class="title" data-toggle="collapse" data-target="#abstract-onmf-lowrank-2014" id="abstract-toggler-onmf-lowrank-2014">
+        Orthogonal NMF via Low-dimensional Factor Sampling
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    
+    <div class="collapse-group">
+        <div class="collapse" id="abstract-onmf-lowrank-2014" toggler="#abstract-toggler-onmf-lowrank-2014">
+            <div class="abstract-wrapper">
+                <div class="abstract">
+                    <p>
+  Orthogonal nonnegative matrix factorization (ONMF) aims to approximate a matrix by the product of two nonnegative factors,
+  one of which satsifies an additional orthogonality constraint.
+  ONMF yields potentially useful data representations, expressing observations as the superposition of few disjoint parts.
+  It has also been shown to work remarkably well for data clustering tasks where traditional methods underperform.
+  Existing approaches for ONMF rely on heuristics, which despite their good performance, lack provable performance guarantees.
+</p>
+<p>
+  We present ONMFactorSampler, a novel algorithm for ONMF with provable approximation guarantees.
+  For any matrix \(\mathbf{M}\) and constant target dimension \(r\), ONMFactorSampler computes a factorization with relative
+  error arbitrarily close to optimal, in polynomial time.
+  Our algorithm operates on a constant rank approximation of \(\mathbf{M}\),
+  and relies on constructing a large, but tractable number of candidate factorizations.
+  Simple heuristic modifications allow scaling up to datasets with millions of entries.
+  Empirical evaluation on synthetic and real datasets shows that ONMFactorSampler matches
+  or outerperforms the state of the art.
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="authors-list">
+        
+        
+        
+        <li>
+            
+            <span style="font-weight:500;">
+                M. Asteris
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            D. Papailiopoulos
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            <a href="http://users.ece.utexas.edu/~dimakis/">A. G. Dimakis</a>
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+
+    
+
+    
+    
+        
+    
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <h3>Conferences</h3>
             
             
+
+
 
 <div class="publication-entry">
     <span class="title" data-toggle="collapse" data-target="#abstract-nnspca-2014" id="abstract-toggler-nnspca-2014">
@@ -139,19 +332,19 @@
             <div class="abstract-wrapper">
                 <div class="abstract">
                     <p>
-  We introduce a novel algorithm to compute nonnegative sparse principal components 
+  We introduce a novel algorithm to compute nonnegative sparse principal components
   of positive semidefinite (PSD) matrices.
-  Our algorithm comes with approximation guarantees 
+  Our algorithm comes with approximation guarantees
   contingent on the spectral profile of the input matrix \(\mathbf{A}\):
   the sharper the eigenvalue decay, the better the quality of the approximation.
 </p>
 <p>
-  If the eigenvalues decay like any asymptotically vanishing function, 
-  we can approximate nonnegative sparse PCA within any accuracy \(\epsilon\) in time 
+  If the eigenvalues decay like any asymptotically vanishing function,
+  we can approximate nonnegative sparse PCA within any accuracy \(\epsilon\) in time
   polynomial in the matrix dimension \(n\) and desired sparsity \(k\), but not in \(1/\epsilon\).
-  Further, we obtain a data dependent bound that is computed by executing an algorithm on a given data set. 
+  Further, we obtain a data dependent bound that is computed by executing an algorithm on a given data set.
   This bound is significantly tighter than <i>a-priori</i> bounds and
-  can be used to show that for all tested datasets our algorithm is provably  
+  can be used to show that for all tested datasets our algorithm is provably
   within 40%-90% from the unknown optimum.
 </p>
 <p>
@@ -171,7 +364,7 @@
             <div class="bibtex-wrapper">
                 <div class="bibtex">
                     <pre id="nnspca-2014"><code>@<span class="keyword">inproceedings</span>{<span>nnspca:2014</span>,
-  <span class="constant">author</span> = {<span class="value">Megasthenis Asteris, Dimitris Papailiopoulos, Alexandros Dimakis</span>},
+  <span class="constant">author</span> = {<span class="value">Asteris, Megasthenis and Papailiopoulos, Dimitris and Dimakis, Alexandros</span>},
   <span class="constant">title</span> = {<span class="value">Nonnegative Sparse PCA with Provable Guarantees</span>},
   <span class="constant">year</span> = {<span class="value">2014</span>},
   <span class="constant">pages</span> = {<span class="value">1728--1736</span>},
@@ -308,9 +501,11 @@
         
     </ul>
 
+    
     <span class="venue">
        International Conference on Machine Learning (ICML), Beijing, China, 2014
     </span>
+    
 
     
     
@@ -327,15 +522,19 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/nnspca-full.pdf">.pdf</a>
         </li>
         
         
         
+        
+        
         <li class="link">
             <a href="/repository/nnspca-icml-2014-slides.pdf">slides.pdf</a>
         </li>
+        
         
         
     </ul>
@@ -346,7 +545,7 @@
 
 <div class="publication-entry">
     <span class="title" data-toggle="collapse" data-target="#abstract-xorbas-2013" id="abstract-toggler-xorbas-2013">
-        XORing elephants: novel erasure codes for big data
+        XORing Elephants: Novel Erasure Codes for Big Data
         <span class="symbol symbol-expand"></span>
     </span>
     
@@ -360,19 +559,19 @@
             <div class="abstract-wrapper">
                 <div class="abstract">
                     <p>
-  Distributed storage systems for large clusters typically use replication to provide reliability. 
-  Recently, erasure codes have been used to reduce the large storage overhead of three-replicated systems. 
+  Distributed storage systems for large clusters typically use replication to provide reliability.
+  Recently, erasure codes have been used to reduce the large storage overhead of three-replicated systems.
   Reed-Solomon codes are the standard design choice and their high repair cost is often considered an unavoidable price to pay for high storage efficiency and high reliability.
 </p>
 <p>
-  This paper shows how to overcome this limitation. 
-  We present a novel family of erasure codes that are efficiently repairable and offer higher reliability compared to Reed-Solomon codes. 
+  This paper shows how to overcome this limitation.
+  We present a novel family of erasure codes that are efficiently repairable and offer higher reliability compared to Reed-Solomon codes.
   We show analytically that our codes are optimal on a recently identified tradeoff between locality and minimum distance.
 </p>
 <p>
-  We implement our new codes in Hadoop HDFS and compare to a currently deployed HDFS module that uses Reed-Solomon codes. 
-  Our modified HDFS implementation shows a reduction of approximately 2x on the repair disk I/O and repair network traffic. 
-  The disadvantage of the new coding scheme is that it requires 14% more storage compared to Reed-Solomon codes, an overhead shown to be information theoretically optimal to obtain locality. 
+  We implement our new codes in Hadoop HDFS and compare to a currently deployed HDFS module that uses Reed-Solomon codes.
+  Our modified HDFS implementation shows a reduction of approximately 2x on the repair disk I/O and repair network traffic.
+  The disadvantage of the new coding scheme is that it requires 14% more storage compared to Reed-Solomon codes, an overhead shown to be information theoretically optimal to obtain locality.
   Because the new codes repair failures faster, this provides higher reliability, which is orders of magnitude higher compared to replication.
 </p>
 
@@ -390,17 +589,12 @@
                     <pre id="xorbas-2013"><code>@<span class="keyword">inproceedings</span>{<span>xorbas:2013</span>,
   <span class="constant">author</span> = {<span class="value">Sathiamoorthy, Maheswaran and Asteris, Megasthenis and Papailiopoulos, Dimitris and Dimakis, Alexandros G. and Vadali, Ramkumar and Chen, Scott and Borthakur, Dhruba</span>},
   <span class="constant">title</span> = {<span class="value">XORing elephants: novel erasure codes for big data</span>},
-  <span class="constant">journal</span> = {<span class="value">Proc. VLDB Endow.</span>},
+  <span class="constant">booktitle</span> = {<span class="value">Proceedings of the VLDB Endowment</span>},
   <span class="constant">volume</span> = {<span class="value">6</span>},
   <span class="constant">number</span> = {<span class="value">5</span>},
   <span class="constant">pages</span> = {<span class="value">325--336</span>},
-  <span class="constant">numpages</span> = {<span class="value">12</span>},
-  <span class="constant">publisher</span> = {<span class="value">VLDB Endowment</span>},
+  <span class="constant">organization</span> = {<span class="value">VLDB Endowment</span>},
   <span class="constant">year</span> = {<span class="value">2013</span>},
-  <span class="constant">month</span> = {<span class="value">March</span>},
-  <span class="constant">issn</span> = {<span class="value">2150-8097</span>},
-  <span class="constant">acmid</span> = {<span class="value">2488339</span>},
-  <span class="constant">url</span> = {<span class="value">http://dl.acm.org/citation.cfm?id=2535573.2488339</span>},
 }
 </code></pre>
                 </div>
@@ -690,9 +884,11 @@
         
     </ul>
 
+    
     <span class="venue">
        Proceedings of the VLDB Endowment 2013, Riva del Garda, Trento, Italy, 2013
     </span>
+    
 
     
     
@@ -711,15 +907,19 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/PVLDB2013-XORingElephants.pdf">.pdf</a>
         </li>
         
         
         
+        
+        
         <li class="link">
             <a href="http://arxiv.org/abs/1301.3791">arXiv</a>
         </li>
+        
         
         
         
@@ -732,7 +932,7 @@
 
 <div class="publication-entry">
     <span class="title" data-toggle="collapse" data-target="#abstract-repfount-2012" id="abstract-toggler-repfount-2012">
-        Repairable Fountain codes
+        Repairable Fountain Codes
         <span class="symbol symbol-expand"></span>
     </span>
     
@@ -747,12 +947,12 @@
                 <div class="abstract">
                     <p>
   We introduce a new family of Fountain codes that are systematic and also have sparse parities.
-  Although this is impossible if we require the code to be MDS, we show it can be achieved if we relax our requirement into a near-MDS property. 
-  More concretely, for any \(\epsilon\) we construct codes that guarantee that a random subset of \((1 + \epsilon)k\) symbols sufﬁces to recover the original symbols with high probability. 
-  Our codes produce an unbounded number of output symbols, creating each parity independently by linearly combining a logarithmic number of input symbols. 
-  This structure has the additional beneﬁt of logarithmic locality: a single symbol loss can be repaired by accessing only \(O(\log k)\) other coded symbols. 
-  This is a desired property for distributed storage systems where symbols are spread over a network of storage nodes. 
-  Our mathematical contribution involves analyzing the rank of sparse random matrices over ﬁnite ﬁelds. 
+  Although this is impossible if we require the code to be MDS, we show it can be achieved if we relax our requirement into a near-MDS property.
+  More concretely, for any \(\epsilon\) we construct codes that guarantee that a random subset of \((1 + \epsilon)k\) symbols sufﬁces to recover the original symbols with high probability.
+  Our codes produce an unbounded number of output symbols, creating each parity independently by linearly combining a logarithmic number of input symbols.
+  This structure has the additional beneﬁt of logarithmic locality: a single symbol loss can be repaired by accessing only \(O(\log k)\) other coded symbols.
+  This is a desired property for distributed storage systems where symbols are spread over a network of storage nodes.
+  Our mathematical contribution involves analyzing the rank of sparse random matrices over ﬁnite ﬁelds.
   We rely on establishing that a new family of sparse random bipartite graphs have large matchings with high probability.
 </p>
 
@@ -769,7 +969,7 @@
                 <div class="bibtex">
                     <pre id="repfount-2012"><code>@<span class="keyword">inproceedings</span>{<span>repfount:2012</span>,
   <span class="constant">author</span> = {<span class="value">Asteris, M. and Dimakis, A.G.</span>},
-  <span class="constant">title</span> = {<span class="value">Repairable Fountain codes</span>},
+  <span class="constant">title</span> = {<span class="value">Repairable Fountain Codes</span>},
   <span class="constant">booktitle</span> = {<span class="value">Information Theory Proceedings (ISIT), 2012 IEEE International Symposium on</span>},
   <span class="constant">pages</span> = {<span class="value">1752--1756</span>},
   <span class="constant">year</span> = {<span class="value">2012</span>},
@@ -865,9 +1065,11 @@
         
     </ul>
 
+    
     <span class="venue">
        IEEE ISIT 2012 - International Symposium on Information Theory, Cambridge, MA, 2012
     </span>
+    
 
     
     
@@ -886,15 +1088,19 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/ISIT2012-RepairableFountainCodes.pdf">.pdf</a>
         </li>
         
         
         
+        
+        
         <li class="link">
             <a href="/repository/ISIT2012-RepairableFountainCodes-Presentation.pdf">slides.pdf</a>
         </li>
+        
         
         
         
@@ -907,7 +1113,7 @@
 
 <div class="publication-entry">
     <span class="title" data-toggle="collapse" data-target="#abstract-asteris-sparsepca-2011" id="abstract-toggler-asteris-sparsepca-2011">
-        Sparse principal component of a rank-deficient matrix
+        Sparse Principal Component of a Rank-deficient Matrix
         <span class="symbol symbol-expand"></span>
     </span>
     
@@ -922,8 +1128,8 @@
                 <div class="abstract">
                     <p>
   We consider the problem of identifying the sparse principal component of a rank-deficient matrix.
-  We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets 
-  (that is, sets of indices to the nonzero elements of the vector argument) whose size is polynomially bounded, in terms of rank, 
+  We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets
+  (that is, sets of indices to the nonzero elements of the vector argument) whose size is polynomially bounded, in terms of rank,
   and contains the optimal index-set, <i>i.e.,</i> the index-set of the nonzero elements of the optimal solution.
   Finally, we develop an algorithm that computes the optimal sparse principal component in polynomial time for any sparsity degree.
 </p>
@@ -1077,9 +1283,11 @@
         
     </ul>
 
+    
     <span class="venue">
        IEEE ISIT 2011 - International Symposium on Information Theory, Saint Petersburg, Russia, 2011
     </span>
+    
 
     
     
@@ -1098,15 +1306,19 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/sparsePC-isit2011.pdf">.pdf</a>
         </li>
         
         
         
+        
+        
         <li class="link">
             <a href="/repository/sparsePC-matlab.zip">matlab.zip</a>
         </li>
+        
         
         
         
@@ -1125,9 +1337,12 @@
 
 
 
+
             <h3>Journals</h3>
             
             
+
+
 
 
 
@@ -1154,7 +1369,7 @@
                 <div class="abstract">
                     <p>
   We introduce a new family of Fountain codes that are systematic and also have sparse parities.
-  Given an input of \(k\) symbols, our codes produce an unbounded number of output symbols, 
+  Given an input of \(k\) symbols, our codes produce an unbounded number of output symbols,
   generating each parity independently by linearly combining a logarithmic number of randomly selected input symbols.
   The construction guarantees that for any \(\epsilon>0\) accessing a random subset
   of \((1+\epsilon)k\) encoded symbols, asymptotically suffices to recover the
@@ -1187,7 +1402,7 @@
         <div class="collapse" id="bibtex-asteris-repfount-2012" toggler="#bibtex-toggler-asteris-repfount-2012">
             <div class="bibtex-wrapper">
                 <div class="bibtex">
-                    <pre id="asteris-repfount-2012"><code>@<span class="keyword">article</span>{<span>repfount:2012</span>,
+                    <pre id="asteris-repfount-2012"><code>@<span class="keyword">article</span>{<span>repfount:2014</span>,
   <span class="constant">author</span> = {<span class="value">Asteris, M. and Dimakis, AG.</span>},
   <span class="constant">journal</span> = {<span class="value">Selected Areas in Communications, IEEE Journal on</span>},
   <span class="constant">title</span> = {<span class="value">Repairable Fountain Codes</span>},
@@ -1287,9 +1502,11 @@
         
     </ul>
 
+    
     <span class="venue">
        IEEE Journal on Selected Areas in Communications (JSAC), 2014
     </span>
+    
 
     
     
@@ -1302,9 +1519,11 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/RepairableFountainCodes-jsac2013.pdf">.pdf</a>
         </li>
+        
         
         
     </ul>
@@ -1314,14 +1533,18 @@
 
 
 <div class="publication-entry">
-    <span class="title" data-toggle="collapse" data-target="#abstract-asteris-spca-2013" id="abstract-toggler-asteris-spca-2013">
+    <span class="title" data-toggle="collapse" data-target="#abstract-asteris-spca-2014" id="abstract-toggler-asteris-spca-2014">
         The Sparse Principal Component of a Constant-rank Matrix
         <span class="symbol symbol-expand"></span>
     </span>
     
+    <a data-toggle="collapse" data-target="#bibtex-asteris-spca-2014" id="bibtex-toggler-asteris-spca-2014" class="bib-toggler">
+        Bib
+    </a>
+    
     
     <div class="collapse-group">
-        <div class="collapse" id="abstract-asteris-spca-2013" toggler="#abstract-toggler-asteris-spca-2013">
+        <div class="collapse" id="abstract-asteris-spca-2014" toggler="#abstract-toggler-asteris-spca-2014">
             <div class="abstract-wrapper">
                 <div class="abstract">
                     <p>
@@ -1329,7 +1552,7 @@
   Finding this optimal submatrix is what renders the problem NP-hard.
   In this work, we prove that, if the matrix is positive semidefinite and its rank is constant, then its sparse principal component is polynomially computable.
   Our proof utilizes the auxiliary unit vector technique that has been recently developed to identify problems that are polynomially solvable.
-  Moreover, we use this technique to design an algorithm which, for any sparsity value, computes the sparse principal component with complexity \(O\left(N^{D+1}\right)\), 
+  Moreover, we use this technique to design an algorithm which, for any sparsity value, computes the sparse principal component with complexity \(O\left(N^{D+1}\right)\),
   where \(N\) and \(D\) are the matrix size and rank, respectively.
   Our algorithm is fully parallelizable and memory efficient.
 </p>
@@ -1340,6 +1563,36 @@
     </div>
     
 
+    
+    <div class="collapse-group">
+        <div class="collapse" id="bibtex-asteris-spca-2014" toggler="#bibtex-toggler-asteris-spca-2014">
+            <div class="bibtex-wrapper">
+                <div class="bibtex">
+                    <pre id="asteris-spca-2014"><code>@<span class="keyword">inproceedings</span>{<span>spca:2014</span>,
+  <span class="constant">author</span> = {<span class="value">Asteris, Megasthenis and Papailiopoulos, Dimitris S. and Karystinos, Georgios N.</span>},
+  <span class="constant">journal</span> = {<span class="value">Information Theory, IEEE Transactions on</span>},
+  <span class="constant">title</span> = {<span class="value">The Sparse Principal Component of a Constant-Rank Matrix</span>},
+  <span class="constant">year</span> = {<span class="value">2014</span>},
+  <span class="constant">month</span> = {<span class="value">April</span>},
+  <span class="constant">volume</span> = {<span class="value">60</span>},
+  <span class="constant">number</span> = {<span class="value">4</span>},
+  <span class="constant">pages</span> = {<span class="value">2281--2290</span>},
+  <span class="constant">keywords</span> = {<span class="value">"computational complexity;eigenvalues and eigenfunctions;optimisation;
+principal component analysis;signal processing;NP-hard;auxiliary unit vector;
+constant-rank matrix;maximum eigenvalue;optimal submatrix;principal submatrix;
+sparse principal component;sparsity value;Complexity theory;Indexes;
+Optimization;Polynomials;Principal component analysis;Sparse matrices;Vectors;
+Eigenvalues and eigenfunctions;feature extraction;information processing;
+machine learning algorithms;principal component analysis;signal processing algorithms"
+</span>},
+  <span class="constant">doi</span> = {<span class="value">10.1109/TIT.2014.2303975</span>},
+  <span class="constant">issn</span> = {<span class="value">0018-9448</span>},
+}
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <ul class="authors-list">
         
@@ -1463,9 +1716,11 @@
         
     </ul>
 
+    
     <span class="venue">
-       to appear in IEEE Transactions on Information Theory, 
+       Information Theory, IEEE Transactions on, 2014
     </span>
+    
 
     
     
@@ -1488,9 +1743,12 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/sparsePC-TIT-v13.pdf">preprint.pdf</a>
         </li>
+        
+        
         
         
         
@@ -1502,9 +1760,12 @@
         
         
         
+        
+        
         <li class="link">
             <a href="/repository/sparsePC-matlab.zip">matlab.zip</a>
         </li>
+        
         
         
     </ul>
@@ -1871,9 +2132,11 @@
         
     </ul>
 
+    
     <span class="venue">
        IEEE Pervasive Computing, 2013
     </span>
+    
 
     
     
@@ -1887,9 +2150,12 @@
 
 
 
+
             <h3>Other</h3>
             
             
+
+
 
 
 
@@ -1918,7 +2184,7 @@
                 <div class="abstract">
                     <p>
   We consider the problem of identifying the sparse principal component of a rank-deficient matrix.
-  We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets 
+  We introduce auxiliary spherical variables and prove that there exists a set of candidate index-sets
   (that is, sets of indices to the nonzero elements of the vector argument) whose size is polynomially bounded,
    in terms of rank, and contains the optimal index-set, <i>i.e.,</i> the index-set of the nonzero elements of the optimal solution.
   Finally, we develop an algorithm that computes the optimal sparse principal component in polynomial time for any sparsity degree.
@@ -2243,9 +2509,11 @@
         
     </ul>
 
+    
     <span class="venue">
        2nd International Workshop in Sensing Technologies in Architecture, Forestry and Environment (ECOSENSE), Belgrade, Serbia, 
     </span>
+    
 
     
     
@@ -2262,9 +2530,12 @@
     <ul class="link-list">
         
         
+        
         <li class="link">
             <a href="/repository/ecosense2011.pdf">.pdf</a>
         </li>
+        
+        
         
         
         
@@ -2273,17 +2544,17 @@
         </li>
         
         
+        
     </ul>
     
 </div>
+
 
 
           </div>
         </div> <!-- publications end -->
     </div>
 </div> <!-- row -->
-
-
 
       </div>
 
