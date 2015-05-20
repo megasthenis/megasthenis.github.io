@@ -73,33 +73,58 @@
             
             
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <h3>Conferences</h3>
+            
+            
+
 <div class="publication-entry">
-    <span class="title" data-toggle="collapse" data-target="#abstract-onmf-lowrank-2014" id="abstract-toggler-onmf-lowrank-2014">
-        Orthogonal NMF via Low-dimensional Factor Sampling
+    <span class="title" data-toggle="collapse" data-target="#abstract-pathpca-2015" id="abstract-toggler-pathpca-2015">
+        Stay on path: PCA along graph paths
         <span class="symbol symbol-expand"></span>
     </span>
     
     
     <div class="collapse-group">
-        <div class="collapse" id="abstract-onmf-lowrank-2014" toggler="#abstract-toggler-onmf-lowrank-2014">
+        <div class="collapse" id="abstract-pathpca-2015" toggler="#abstract-toggler-pathpca-2015">
             <div class="abstract-wrapper">
                 <div class="abstract">
                     <p>
-  Orthogonal nonnegative matrix factorization (ONMF) aims to approximate a matrix by the product of two nonnegative factors,
-  one of which satsifies an additional orthogonality constraint.
-  ONMF yields potentially useful data representations, expressing observations as the superposition of few disjoint parts.
-  It has also been shown to work remarkably well for data clustering tasks where traditional methods underperform.
-  Existing approaches for ONMF rely on heuristics, which despite their good performance, lack provable performance guarantees.
+  We introduce a variant of (sparse) PCA
+  in which the set of feasible support sets is determined by a graph.
+  In particular, we consider the following setting: given a directed acyclic graph~\(G\) on \(p\) vertices corresponding to variables, the non-zero entries of the extracted principal component must coincide with vertices lying along a path in \(G\).
 </p>
 <p>
-  We present ONMFactorSampler, a novel algorithm for ONMF with provable approximation guarantees.
-  For any matrix \(\mathbf{M}\) and constant target dimension \(r\), ONMFactorSampler computes a factorization with relative
-  error arbitrarily close to optimal, in polynomial time.
-  Our algorithm operates on a constant rank approximation of \(\mathbf{M}\),
-  and relies on constructing a large, but tractable number of candidate factorizations.
-  Simple heuristic modifications allow scaling up to datasets with millions of entries.
-  Empirical evaluation on synthetic and real datasets shows that ONMFactorSampler matches
-  or outerperforms the state of the art.
+  From a statistical perspective, information on the underlying network may potentially reduce the number of observations required to recover the population principal component.
+  We consider the canonical estimator which optimally exploits the prior knowledge by solving a non-convex quadratic maximization on the empirical covariance.
+  We introduce a simple network and analyze the estimator under the spiked covariance model.
+  We show that side information potentially improves the statistical complexity.
+</p>
+<p>
+  We propose two algorithms to approximate the solution of the constrained quadratic maximization, and recover a component with the desired properties.
+  We empirically evaluate our schemes on synthetic and real datasets.
 </p>
 
                 </div>
@@ -171,15 +196,29 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
             
-            D. Papailiopoulos
+            A. Kyrillidis
             
             </span>
             
         </li>
+        
+        
+        
+        
+        
+        
         
         
         
@@ -235,42 +274,137 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            H. Yi
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            B. Chandrasekaran
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     </ul>
 
+    
+    <span class="venue">
+       International Conference on Machine Learning (ICML), Beijing, China, 
+    </span>
     
 
     
     
         
+            
+        
     
 
+    
+    <ul class="link-list">
+        
+        
+        
+        <li class="link">
+            <a href="/repository/pca-on-graph-path.pdf">.pdf</a>
+        </li>
+        
+        
+        
+    </ul>
     
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <h3>Conferences</h3>
-            
-            
 
 
 
@@ -308,6 +442,12 @@
 
     
     <ul class="authors-list">
+        
+        
+        
+        
+        
+        
         
         
         
@@ -401,6 +541,14 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -410,6 +558,10 @@
             </span>
             
         </li>
+        
+        
+        
+        
         
         
         
@@ -602,6 +754,18 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -634,6 +798,8 @@
         
         
         
+        
+        
         <li>
             
             <span>
@@ -643,6 +809,10 @@
             </span>
             
         </li>
+        
+        
+        
+        
         
         
         
@@ -805,6 +975,12 @@
         
         
         
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -834,6 +1010,18 @@
             </span>
             
         </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -917,6 +1105,8 @@
         
         
         
+        
+        
         <li>
             
             <span>
@@ -926,6 +1116,16 @@
             </span>
             
         </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -997,6 +1197,8 @@
         
         
         
+        
+        
         <li>
             
             <span>
@@ -1041,6 +1243,12 @@
         
         
         
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1050,6 +1258,10 @@
             </span>
             
         </li>
+        
+        
+        
+        
         
         
         
@@ -1228,6 +1440,14 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1237,6 +1457,10 @@
             </span>
             
         </li>
+        
+        
+        
+        
         
         
         
@@ -1420,6 +1644,18 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1456,6 +1692,10 @@
         
         
         
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1465,6 +1705,8 @@
             </span>
             
         </li>
+        
+        
         
         
         
@@ -1544,6 +1786,8 @@
             <h3>Journals</h3>
             
             
+
+
 
 
 
@@ -1677,6 +1921,14 @@
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1686,6 +1938,10 @@
             </span>
             
         </li>
+        
+        
+        
+        
         
         
         
@@ -1865,6 +2121,18 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1901,6 +2169,10 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
         <li>
             
             <span>
@@ -1910,6 +2182,8 @@ machine learning algorithms;principal component analysis;signal processing algor
             </span>
             
         </li>
+        
+        
         
         
         
@@ -2109,6 +2383,18 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -2118,6 +2404,10 @@ machine learning algorithms;principal component analysis;signal processing algor
             </span>
             
         </li>
+        
+        
+        
+        
         
         
         
@@ -2179,6 +2469,12 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -2188,6 +2484,20 @@ machine learning algorithms;principal component analysis;signal processing algor
             </span>
             
         </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -2337,6 +2647,18 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -2385,6 +2707,8 @@ machine learning algorithms;principal component analysis;signal processing algor
             <h3>Other</h3>
             
             
+
+
 
 
 
@@ -2504,6 +2828,18 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -2528,6 +2864,10 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
         <li>
             
             <span>
@@ -2537,6 +2877,12 @@ machine learning algorithms;principal component analysis;signal processing algor
             </span>
             
         </li>
+        
+        
+        
+        
+        
+        
         
         
         
@@ -2658,6 +3004,20 @@ machine learning algorithms;principal component analysis;signal processing algor
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <li>
             
             <span>
@@ -2683,6 +3043,18 @@ machine learning algorithms;principal component analysis;signal processing algor
             </span>
             
         </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
