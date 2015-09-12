@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Megas</title>
+    <title>megas</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Megasthenis Asteris">
     <link rel="canonical" href="http://megasthenis.github.io/">
@@ -144,11 +144,465 @@
 
 
 
+
+
+
+
             -->
             
             <h3>Conferences</h3>
             
             
+
+<div class="publication-entry">
+    <span class="title" data-toggle="collapse" data-target="#abstract-spca-2015" id="abstract-toggler-spca-2015">
+        Sparse PCA via Bipartite Matchings
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    
+    <div class="collapse-group">
+        <div class="collapse" id="abstract-spca-2015" toggler="#abstract-toggler-spca-2015">
+            <div class="abstract-wrapper">
+                <div class="abstract">
+                    <p>
+  We consider the following multi-component sparse PCA problem: given a set of data points, we seek to extract a small number of sparse components with disjoint supports that jointly capture the maximum possible variance.
+  These components can be computed one by one, repeatedly solving the single-component problem and deflating the input data matrix, but as we show this greedy procedure is suboptimal. 
+  We present a novel algorithm for sparse PCA that jointly optimizes multiple disjoint components.
+  The extracted features capture variance that lies within a multiplicative factor arbitrarily close to \(1\) from the optimal.
+  Our algorithm is combinatorial and computes the desired components by solving multiple instances of the bipartite maximum weight matching problem.
+  Its complexity grows as a low order polynomial in the ambient dimension of the input data matrix, but exponentially in its rank.
+  However, it can be effectively applied on a low-dimensional sketch of the data;
+  this allows us to obtain polynomial-time approximation guarantees via spectral bounds.
+  We evaluate our algorithm on real data-sets and empirically demonstrate that in many cases it outperforms existing, deflation-based approaches.
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="authors-list">
+        
+        
+        
+        <li>
+            
+            <span style="font-weight:500;">
+                M. Asteris
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            D. Papailiopoulos
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            <a href="http://arnakistofourno.github.io/about/">A. Kyrillidis</a>
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            <a href="http://users.ece.utexas.edu/~dimakis/">A. G. Dimakis</a>
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+
+    
+    <span class="venue">
+       29th Annual Conference on Neural Information Processing Systems (NIPS), Montréal, Canada, 2015, 
+    </span>
+    
+
+    
+    
+        
+            
+        
+    
+
+    
+    <ul class="link-list">
+        
+        
+        
+        <li class="link">
+            <a href="http://arxiv.org/abs/1508.00625">arXiv</a>
+        </li>
+        
+        
+        
+    </ul>
+    
+</div>
+
+
+
+<div class="publication-entry">
+    <span class="title" data-toggle="collapse" data-target="#abstract-onmf-2015" id="abstract-toggler-onmf-2015">
+        Orthogonal NMF through Subspace Exploration
+        <span class="symbol symbol-expand"></span>
+    </span>
+    
+    
+    <div class="collapse-group">
+        <div class="collapse" id="abstract-onmf-2015" toggler="#abstract-toggler-onmf-2015">
+            <div class="abstract-wrapper">
+                <div class="abstract">
+                    <p>
+  Orthogonal Nonnegative Matrix Factorization (ONMF) aims to approximate a nonnegative matrix as the product of two \(k\)-dimensional nonnegative factors, one of which has orthonormal columns. 
+  It yields potentially useful data representations as superposition of disjoint parts, while it has been shown to work well for clustering tasks where traditional methods underperform. 
+  Existing algorithms rely mostly on heuristics, which despite their good empirical performance, lack provable performance guarantees.
+</p>
+<p>
+  We present a new ONMF algorithm with provable approximation guarantees.
+  For any constant dimension \(k\), we obtain an additive EPTAS algorithm without any assumptions on the input.
+  Our algorithm relies on a novel approximation to the related Nonnegative Principal Component Analysis (NNPCA) problem;
+  given an arbitrary data matrix, NNPCA seeks $k$ nonnegative components that jointly capture most of the variance. 
+  Our NNPCA algorithm is of independent interest and generalizes previous work that could only obtain guarantees for the first component. 
+</p>
+<p>
+  We evaluate our algorithms on several real and artificial datasets and show that their performance matches or outperforms the state of the art. 
+</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <ul class="authors-list">
+        
+        
+        
+        <li>
+            
+            <span style="font-weight:500;">
+                M. Asteris
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            D. Papailiopoulos
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li>
+            
+            <span>
+            
+            <a href="http://users.ece.utexas.edu/~dimakis/">A. G. Dimakis</a>
+            
+            </span>
+            
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </ul>
+
+    
+    <span class="venue">
+       29th Annual Conference on Neural Information Processing Systems (NIPS), Montréal, Canada, 2015, 
+    </span>
+    
+
+    
+    
+        
+    
+
+    
+</div>
+
+
 
 <div class="publication-entry">
     <span class="title" data-toggle="collapse" data-target="#abstract-pathpca-2015" id="abstract-toggler-pathpca-2015">
@@ -1887,6 +2341,10 @@
 
 
 
+
+
+
+
 <div class="publication-entry">
     <span class="title" data-toggle="collapse" data-target="#abstract-asteris-repfount-2012" id="abstract-toggler-asteris-repfount-2012">
         Repairable Fountain Codes
@@ -2805,6 +3263,10 @@ machine learning algorithms;principal component analysis;signal processing algor
             <h3>Other</h3>
             
             
+
+
+
+
 
 
 
